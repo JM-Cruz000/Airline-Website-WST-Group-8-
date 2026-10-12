@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookings</title>
+
+   <link rel="stylesheet" href="booking.css">
+
+</head>
+
+<body>
+    <div class="page-shell">
+        <h1>Book a Flight</h1>
+
+        <form id="bookingForm">
+
+        <label>Passenger Name:</label>
+        <input type="text" name="name"
+               placeholder="Enter Full Name" required>
+        <br><br>
+
+        <label>Email:</label>
+        <input type="email" name="email"
+               placeholder="Enter Email" required>
+        <br><br>
+
+        <label>Phone:</label>
+        <input type="tel" name="phone"
+               placeholder="Enter Phone Number" required>
+        <br><br>
+
+        <label>Passport Number:</label>
+        <input type="text" name="passport"
+               placeholder="Enter Passport No.">
+        <br><br>
+
+        <label>Departure Country:</label>
+        <select name="departure" required>
+            <option value="">Select Departure</option>
+            <option>Philippines</option>
+            <option>Korea</option>
+            <option>Japan</option>
+            <option>America</option>
+            <option>Spain</option>
+            <option>Switzerland</option>
+        </select>
+        <br><br>
+
+        <label>Destination Country:</label>
+        <select name="destination" required>
+            <option value="">Select Destination</option>
+            <option>Philippines</option>
+            <option>Korea</option>
+            <option>Japan</option>
+            <option>America</option>
+            <option>Spain</option>
+            <option>Switzerland</option>
+        </select>
+        <br><br>
+
+        <label>Departure Date:</label>
+        <input type="date" name="departureDate" required>
+        <br><br>
+
+        <label>Return Date:</label>
+        <input type="date" name="returnDate">
+        <br><br>
+
+        <label>Number of Passengers:</label>
+        <select name="passengers" required>
+            <option value="1">1 Passenger</option>
+            <option value="2">2 Passengers</option>
+            <option value="3">3 Passengers</option>
+            <option value="4">4 Passengers</option>
+            <option value="5">5 Passengers</option>
+        </select>
+        <br><br>
+
+        <label>Seat Class:</label>
+        <select name="seatClass" required>
+            <option value="">Select Seat Class</option>
+            <option>Economy</option>
+            <option>Premium Economy</option>
+            <option>Business Class</option>
+            <option>First Class</option>
+        </select>
+        <br><br>
+
+        <label>Trip Type:</label>
+        <br>
+        <input type="radio" name="trip"
+               value="One-Way" required> One-Way
+
+        <input type="radio" name="trip"
+               value="Round-Trip"> Round-Trip
+        <br><br>
+
+        <label>Payment Method:</label>
+        <select name="payment" required>
+            <option value="">Select Payment</option>
+            <option>Credit/Debit Card</option>
+            <option>GCash</option>
+            <option>Bank Transfer</option>
+        </select>
+        <br><br>
+
+        <label>Special Requests:</label>
+        <br>
+        <textarea name="requests" rows="3" cols="30"
+                  placeholder="Enter special requests..."></textarea>
+        <br><br>
+
+        <input type="checkbox" name="terms" required>
+        I agree to the booking terms and conditions.
+        <br><br>
+
+            <button type="submit" class="submit-btn" onclick="alert('Flight Booked')"">BOOK FLIGHT</button>
+            <a href="index.html" class="cancel">Cancel</a>
+
+        </form>
+    </div>
+</body>
+</html>
